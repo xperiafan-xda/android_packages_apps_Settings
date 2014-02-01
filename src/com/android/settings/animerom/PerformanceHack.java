@@ -108,7 +108,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
 
     private ListPreference mLowMemKillPref;
 
-    private ListPreference mGameModePref
+    private ListPreference mGameModePref;
 
     private int swapAvailable = -1;
 
@@ -182,15 +182,13 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
                 prefSet.removePreference(mLowMemKillPref);
             }
 
-            }
-
             temp = CPUActivity.readOneLine(GAMEMODE_RUN_FILE);
 
             mGameModePref.setValue(temp);
             mGameModePref.setOnPreferenceChangeListener(this);
 
             if (temp == null) {
-                prefSet.removePreference(mGamePref);
+                prefSet.removePreference(mGameModePref);
             }
         }
     }
