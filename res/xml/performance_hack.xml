@@ -51,5 +51,13 @@
         android:summary="@string/pref_lowmemkill_summary"
         android:entries="@array/entries_lowmemkill"
         android:entryValues="@array/values_lowmemkill" />
+        
+    <ListPreference
+        android:key="pref_gamemode"
+        android:dialogTitle="@string/game_mode_title"
+        android:title="@string/game_mode_title"
+        android:summary="@string/game_mode_summary"
+        android:entries="@array/entries_gamemode"
+        android:entryValues="@array/values_gamemode" />
 
 </PreferenceScreen>
