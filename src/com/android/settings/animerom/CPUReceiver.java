@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 AnimeROM
- * Miguel Angel Sánchez Bravo
+ * Miguel Ángel Sánchez Bravo
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,6 +56,7 @@ public class CPUReceiver extends BroadcastReceiver {
             SystemProperties.set(IOSCHED_SETTINGS_PROP, "true");
             configureIOSched(ctx);
             configureLOWMEMKILL(ctx);
+            configureGAMEMODE(ctx);
         } else {
             SystemProperties.set(CPU_SETTINGS_PROP, "false");
             SystemProperties.set(KSM_SETTINGS_PROP, "false");
@@ -83,10 +84,18 @@ public class CPUReceiver extends BroadcastReceiver {
 
     private void configureLOWMEMKILL(Context ctx) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
-    
+
         CPUActivity.writeOneLine(PerformanceHack.LOWMEMKILL_RUN_FILE, prefs.getString(PerformanceHack.LOWMEMKILL_PREF,
                       PerformanceHack.LOWMEMKILL_PREF_DEFAULT));
         Log.d(TAG, "LowMemKill settings restored.");
+    }
+
+    private void configureGAMEMODE(Context ctx) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
+
+        CPUActivity.writeOneLine(PerformanceHack.GAMEMODE_RUN_FILE, prefs.getString(PerformanceHack.LOWMEMKILL_PREF,
+                      PerformanceHack.LOWMEMKILL_PREF_DEFAULT)); // Some value from LowMemKill
+        Log.d(TAG, "GameMODE restored.");
     }
 
     private void configureKSM(Context ctx) {
@@ -140,19 +149,19 @@ public class CPUReceiver extends BroadcastReceiver {
         String maxFrequency = prefs.getString(CPUActivity.MAX_FREQ_PREF, null);
         String availableFrequenciesLine = CPUActivity.readOneLine(CPUActivity.FREQ_LIST_FILE);
         String availableGovernorsLine = CPUActivity.readOneLine(CPUActivity.GOVERNORS_LIST_FILE);
-        boolean noSettings = ((availableGovernorsLine == null) || (governor == null)) && 
+        boolean noSettings = ((availableGovernorsLine == null) || (governor == null)) &&
                              ((availableFrequenciesLine == null) || ((minFrequency == null) && (maxFrequency == null)));
         List<String> frequencies = null;
         List<String> governors = null;
-        
+
         if (noSettings) {
             Log.d(TAG, "No settings saved. Nothing to restore.");
         } else {
             if (availableGovernorsLine != null){
-                governors = Arrays.asList(availableGovernorsLine.split(" "));  
+                governors = Arrays.asList(availableGovernorsLine.split(" "));
             }
             if (availableFrequenciesLine != null){
-                frequencies = Arrays.asList(availableFrequenciesLine.split(" "));  
+                frequencies = Arrays.asList(availableFrequenciesLine.split(" "));
             }
             if (governor != null && governors != null && governors.contains(governor)) {
                 CPUActivity.writeOneLine(CPUActivity.GOVERNOR, governor);
