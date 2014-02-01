@@ -394,6 +394,10 @@
     <!-- Enable power menu -->
     <string name="lockscreen_enable_power_menu_title">Enable power menu</string>
     <string name="lockscreen_enable_power_menu_summary">Show power menu when screen is locked</string>
+    
+    <!-- GameMODE AnimeROM -->
+    <string name="game_mode_title">Game Mode</string>
+    <string name="game_mode_summary">Enhanced your game experience</string>
 
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">See through</string>
