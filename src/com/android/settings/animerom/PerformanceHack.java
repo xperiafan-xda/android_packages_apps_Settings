@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 AnimeROM
- * Miguel Angel Sánchez Bravo
+ * Miguel Ángel Sánchez Bravo
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -88,6 +88,12 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
 
     public static final String LOWMEMKILL_PREF_DEFAULT = "2560,4096,6144,11264,11776,14336";
 
+    public static final String GAMEMODE_RUN_FILE = "/sys/module/lowmemorykiller/parameters/minfree";
+
+    public static final String GAMEMODE_PREF = "game_mode";
+
+    private static final String GAMEMODE_PROP = "gamemode";
+
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mPurgeableAssetsPref;
@@ -101,6 +107,8 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
     private ListPreference mKSMScanPref;
 
     private ListPreference mLowMemKillPref;
+
+    private ListPreference mGameModePref
 
     private int swapAvailable = -1;
 
@@ -125,6 +133,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             mKSMSleepPref = (ListPreference) prefSet.findPreference(KSM_SLEEP_PREF);
             mKSMScanPref = (ListPreference) prefSet.findPreference(KSM_SCAN_PREF);
             mLowMemKillPref = (ListPreference) prefSet.findPreference(LOWMEMKILL_PREF);
+            mGameModePref = (ListPreference) prefSet.findPreference(GAMEMODE_PREF);
 
             if (isSwapAvailable()) {
                 if (SystemProperties.get(COMPCACHE_PERSIST_PROP) == "1")
@@ -171,6 +180,17 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
 
             if (temp == null) {
                 prefSet.removePreference(mLowMemKillPref);
+            }
+
+            }
+
+            temp = CPUActivity.readOneLine(GAMEMODE_RUN_FILE);
+
+            mGameModePref.setValue(temp);
+            mGameModePref.setOnPreferenceChangeListener(this);
+
+            if (temp == null) {
+                prefSet.removePreference(mGamePref);
             }
         }
     }
@@ -230,12 +250,17 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             }
         }
 
+        if (preference == mGameModePref) {
+            if (newValue != null) {
+                SystemProperties.set(GAMEMODE_PROP, (String)newValue);
+                CPUActivity.writeOneLine(GAMEMODE_RUN_FILE, (String)newValue);
+                return true;
+            }
+        }
+
         return false;
     }
 
-    /**
-     * Check if swap support is available on the system
-     */
     private boolean isSwapAvailable() {
         if (swapAvailable < 0) {
             swapAvailable = new File("/proc/swaps").exists() ? 1 : 0;
@@ -243,9 +268,6 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
         return swapAvailable > 0;
     }
 
-    /**
-     * Check if KSM support is available on the system
-     */
     private boolean isKsmAvailable() {
         if (ksmAvailable < 0) {
             ksmAvailable = new File(KSM_RUN_FILE).exists() ? 1 : 0;
