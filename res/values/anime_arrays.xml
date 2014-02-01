@@ -299,9 +299,6 @@
         <item>Multitasking</item>
         <item>Soft multitasking</item>
         <item>Hard multitasking</item>
-        <item>Gaming</item>
-        <item>Soft gaming</item>
-        <item>Hard gaming</item>
     </string-array>
 
     <string-array name="values_lowmemkill">
@@ -313,9 +310,18 @@
         <item>2560,4096,6144,11264,11776,14336</item>
         <item>2560,4096,6144,11776,12288,16384</item>
         <item>2560,4096,6144,10752,11264,13312</item>
+    </string-array>
+    
+    <string-array name="entries_gamemode">
+        <item>Default Mode</item>
+        <item>Soft gaming</item>
+        <item>Hard gaming</item>
+    </string-array>
+
+    <string-array name="values_gamemode">
         <item>2560,3840,6400,10240,12800,19200</item>
         <item>2560,4096,6144,18944,22016,23552</item>
-        <item>2560,3840,6400,12800,12800,25600</item>
+        <item>6400,8960,19200,23040,38400,64000</item>
     </string-array>
 
     <string-array name="pref_compcache_size_entries">
