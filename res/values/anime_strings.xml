@@ -321,19 +321,7 @@
     <string name="perfomance_management_2_title">Other Settings</string>
 
     <string name="pref_gmaps_hack_title">GMaps Hack</string>
-    <string name="memory_management_title">Performance Hack</string>
-
-    <!-- Performance Settings : JIT Mode -->
-    <string name="pref_jit_mode_title">Use JIT</string>
-    <string name="pref_jit_mode_summary">Use the Dalvik just-in-time compiler (requires reboot)</string>
-
-    <!-- Performance Settings : VM Heap Size -->
-    <string name="pref_heapsize_title">VM heap size</string>
-    <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
-
-    <!-- Performance Settings : SDCard Cache Size -->
-    <string name="pref_sdcardcachesize_title">SD Card Cache size</string>
-    <string name="pref_sdcardcachesize_summary">Amount of Cache memory for SD Card reads (requires reboot)</string>
+    <string name="memory_management_title">Performance Hack</str
 
     <!-- Performance : Disable bootanimation -->
     <string name="pref_disable_bootanimation_title">Disable boot animation</string>
@@ -398,6 +386,10 @@
     <!-- GameMODE AnimeROM -->
     <string name="game_mode_title">Game Mode</string>
     <string name="game_mode_summary">Enhanced your game experience</string>
+    
+    <!-- BootAnimation Enable/Disable -->
+    <string name="pref_disable_bootanimation_title">Disable boot animation</string>
+    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
 
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">See through</string>
