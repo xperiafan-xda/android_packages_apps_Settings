@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 AnimeROM
- * Miguel Ángel Sánchez Bravo
+ * Miguel Angel Sánchez Bravo
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -87,12 +87,20 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
     private static final String LOWMEMKILL_PROP = "lowmemkill";
 
     public static final String LOWMEMKILL_PREF_DEFAULT = "2560,4096,6144,11264,11776,14336";
-
+    
     public static final String GAMEMODE_RUN_FILE = "/sys/module/lowmemorykiller/parameters/minfree";
 
-    public static final String GAMEMODE_PREF = "game_mode";
+    public static final String GAMEMODE_PREF = "pref_gamemode";
 
     private static final String GAMEMODE_PROP = "gamemode";
+    
+    public static final String GAMEMODE_PREF_DEFAULT = "";
+    
+    private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
+
+    private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
+
+    private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
 
     private ListPreference mCompcachePref;
 
@@ -107,8 +115,10 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
     private ListPreference mKSMScanPref;
 
     private ListPreference mLowMemKillPref;
-
+    
     private ListPreference mGameModePref;
+    
+    private CheckBoxPreference mDisableBootanimPref;
 
     private int swapAvailable = -1;
 
@@ -134,6 +144,10 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             mKSMScanPref = (ListPreference) prefSet.findPreference(KSM_SCAN_PREF);
             mLowMemKillPref = (ListPreference) prefSet.findPreference(LOWMEMKILL_PREF);
             mGameModePref = (ListPreference) prefSet.findPreference(GAMEMODE_PREF);
+
+            mDisableBootanimPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTANIMATION_PREF);
+            String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
+            mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
             if (isSwapAvailable()) {
                 if (SystemProperties.get(COMPCACHE_PERSIST_PROP) == "1")
@@ -172,6 +186,15 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             } else {
                 prefSet.removePreference(mKSMScanPref);
             }
+            
+            temp = CPUActivity.readOneLine(GAMEMODE_RUN_FILE);
+
+            mGameModePref.setValue(temp);
+            mGameModePref.setOnPreferenceChangeListener(this);
+
+            if (temp == null) {
+                prefSet.removePreference(mGameModePref);;
+            }
 
             temp = CPUActivity.readOneLine(LOWMEMKILL_RUN_FILE);
 
@@ -180,15 +203,6 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
 
             if (temp == null) {
                 prefSet.removePreference(mLowMemKillPref);
-            }
-
-            temp = CPUActivity.readOneLine(GAMEMODE_RUN_FILE);
-
-            mGameModePref.setValue(temp);
-            mGameModePref.setOnPreferenceChangeListener(this);
-
-            if (temp == null) {
-                prefSet.removePreference(mGameModePref);
             }
         }
     }
@@ -210,6 +224,12 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
 
         if (preference == mKSMPref) {
             CPUActivity.writeOneLine(KSM_RUN_FILE, mKSMPref.isChecked() ? "1" : "0");
+            return true;
+        }
+        
+        if (preference == mDisableBootanimPref) {
+            SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
+                    mDisableBootanimPref.isChecked() ? "1" : "0");
             return true;
         }
 
@@ -247,7 +267,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
                 return true;
             }
         }
-
+        
         if (preference == mGameModePref) {
             if (newValue != null) {
                 SystemProperties.set(GAMEMODE_PROP, (String)newValue);
