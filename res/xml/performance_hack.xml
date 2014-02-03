@@ -59,5 +59,11 @@
         android:summary="@string/game_mode_summary"
         android:entries="@array/entries_gamemode"
         android:entryValues="@array/values_gamemode" />
+        
+     <CheckBoxPreference
+        android:key="pref_disable_bootanimation"
+        android:dialogTitle="@string/pref_disable_bootanimation_title"
+        android:title="@string/pref_disable_bootanimation_title"
+        android:summary="@string/pref_disable_bootanimation_summary" />
 
 </PreferenceScreen>
