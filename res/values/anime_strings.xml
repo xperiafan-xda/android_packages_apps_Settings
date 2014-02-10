@@ -321,7 +321,7 @@
     <string name="perfomance_management_2_title">Other Settings</string>
 
     <string name="pref_gmaps_hack_title">GMaps Hack</string>
-    <string name="memory_management_title">Performance Hack</str
+    <string name="memory_management_title">Performance Hack</string>
 
     <!-- Performance : Disable bootanimation -->
     <string name="pref_disable_bootanimation_title">Disable boot animation</string>
