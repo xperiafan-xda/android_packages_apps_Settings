@@ -1708,7 +1708,6 @@
                 android:value="com.android.settings.Settings$SoundSettingsActivity" />
         </activity>
 
-<<<<<<< HEAD
 <!--AnimeROM Activities
 <activity
             android:name=".klzz.Halo"
@@ -1720,7 +1719,6 @@
         </activity>
         AnimeROM ACTIVITIES END -->
 
-=======
         <!-- Pseudo-activity used to provide an intent-filter entry point to sound packages settings -->
         <activity android:name="Settings$SoundPackageSettingsActivity"
                 android:label="@string/sound_packages_title"
