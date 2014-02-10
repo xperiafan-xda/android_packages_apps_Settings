@@ -43,6 +43,11 @@
         android:title="@string/memory_management_settings_title_head"
         android:summary="@string/memory_management_settings_title_head"
         android:fragment="com.android.settings.animerom.PerformanceHack" />
+        
+    <PreferenceScreen
+        android:key="buildprop_modder"
+        android:title="@string/propmodder_title"
+        android:fragment="com.android.settings.animerom.PropModder"/>
 
     <CheckBoxPreference 
         android:key="keep_screen_on" 
