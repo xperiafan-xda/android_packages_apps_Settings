@@ -28,7 +28,7 @@
 
     <!-- Volume panel tweaks -->
     <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
-    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
+    <string name="volume_adjust_sounds_enable_summary">Play sound when changing ringer volume</string>
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="volume_ring_only_description">Ringtone</string>
 
@@ -97,7 +97,7 @@
     <string name="interface_more_title">More\u2026</string>
     <string name="interface_bars_title">Bars</string>
     <string name="interface_menus_title">Menus</string>
-    <string name="interface_notification_panel_title">Notification Drawer</string>
+    <string name="interface_notification_panel_title">Notification drawer</string>
 
     <!-- Battery Icon selection -->
     <string name="pref_battery_indicator_title">Battery indicator</string>
@@ -394,5 +394,19 @@
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">See through</string>
     <string name="lockscreen_see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+
+    <!-- Safe headset volume warning -->
+    <string name="safe_headset_volume_warning_title">Volume warning</string>
+    <string name="safe_headset_volume_warning_summary">Show safe headset volume warning</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
 
 </resources>
