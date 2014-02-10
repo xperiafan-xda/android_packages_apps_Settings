@@ -87,15 +87,15 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
     private static final String LOWMEMKILL_PROP = "lowmemkill";
 
     public static final String LOWMEMKILL_PREF_DEFAULT = "2560,4096,6144,11264,11776,14336";
-    
+
     public static final String GAMEMODE_RUN_FILE = "/sys/module/lowmemorykiller/parameters/minfree";
 
     public static final String GAMEMODE_PREF = "pref_gamemode";
 
     private static final String GAMEMODE_PROP = "gamemode";
-    
+
     public static final String GAMEMODE_PREF_DEFAULT = "";
-    
+
     private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
 
     private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
@@ -115,9 +115,9 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
     private ListPreference mKSMScanPref;
 
     private ListPreference mLowMemKillPref;
-    
+
     private ListPreference mGameModePref;
-    
+
     private CheckBoxPreference mDisableBootanimPref;
 
     private int swapAvailable = -1;
@@ -186,7 +186,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             } else {
                 prefSet.removePreference(mKSMScanPref);
             }
-            
+
             temp = CPUActivity.readOneLine(GAMEMODE_RUN_FILE);
 
             mGameModePref.setValue(temp);
@@ -226,7 +226,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
             CPUActivity.writeOneLine(KSM_RUN_FILE, mKSMPref.isChecked() ? "1" : "0");
             return true;
         }
-        
+
         if (preference == mDisableBootanimPref) {
             SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
                     mDisableBootanimPref.isChecked() ? "1" : "0");
@@ -267,7 +267,7 @@ public class PerformanceHack extends SettingsPreferenceFragment implements
                 return true;
             }
         }
-        
+
         if (preference == mGameModePref) {
             if (newValue != null) {
                 SystemProperties.set(GAMEMODE_PROP, (String)newValue);
