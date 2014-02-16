@@ -31,6 +31,19 @@
     <string name="volume_adjust_sounds_enable_summary">Play sound when changing ringer volume</string>
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="volume_ring_only_description">Ringtone</string>
+    <string name="category_volume_panel_title">Volume panel</string>
+
+    <string name="volume_panel_timeout_title">Timeout</string>
+    <string name="volume_panel_timeout_summary">Time until the panel will be hidden</string>
+
+    <string name="volume_panel_style">Style</string>
+    <string name="single">Single</string>
+    <string name="expandable">Expandable</string>
+    <string name="expanded">Expanded</string>
+
+    <!-- Safe headset volume warning -->
+    <string name="safe_headset_volume_warning_title">Volume warning</string>
+    <string name="safe_headset_volume_warning_summary">Show safe headset volume warning</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
@@ -226,14 +239,6 @@
     <string name="start_time_title">Start</string>
     <string name="end_time_title">End</string>
 
-    <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
-    <string name="change_crypt_password_title">Change password</string>
-    <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
-    <string name="change_crypt_password_summary">Change the password used for device encryption</string>
-
-    <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
-    <string name="encryptionpassword_choose_your_password_header">Set encryption password</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Advanced options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
@@ -395,10 +400,6 @@
     <string name="lockscreen_see_through_title">See through</string>
     <string name="lockscreen_see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
 
-    <!-- Safe headset volume warning -->
-    <string name="safe_headset_volume_warning_title">Volume warning</string>
-    <string name="safe_headset_volume_warning_summary">Show safe headset volume warning</string>
-
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>
@@ -461,4 +462,21 @@
     <string name="pref_gpu_summary">Enable hardware acceleration where the GPU controls the UI instead of the CPU</string>
     <string name="performance_settings_warning_title">Performance</string>
     
+    <!-- ADB Paranoia settings -->
+    <string name="adb_paranoid">ADB paranoia mode</string>
+    <string name="adb_paranoid_summary">Immediately reboot if an unknown computer is connected while device is locked</string>
+
+    <string name="unit_sec">sec</string>
+
+    <!-- custom data usage period -->
+    <string name="daily_cycle_lenght">Daily</string>
+    <string name="weekly_cycle_length">Weekly</string>
+    <string name="monthly_cycle_length">Monthly</string>
+    <string name="weekday_sunday">Sunday</string>
+    <string name="weekday_monday">Monday</string>
+    <string name="weekday_tuesday">Tuesday</string>
+    <string name="weekday_wednesday">Wednesday</string>
+    <string name="weekday_thursday">Thursday</string>
+    <string name="weekday_friday">Friday</string>
+    <string name="weekday_saturday">Saturday</string>
 </resources>
