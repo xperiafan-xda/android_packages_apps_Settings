@@ -211,8 +211,7 @@
     <string name="quiet_hours_auto_sms_title">Incoming text messages</string>
     <string name="quiet_hours_auto_sms_call_title">Incoming phone calls</string>
     <string name="quiet_hours_auto_string_title">Response to send</string>
-    <string name="quiet_hours_auto_string_explain">This message will be sent to anyone who contacts you while
-            quiet hours are active</string>
+    <string name="quiet_hours_auto_string_explain">This message will be sent to anyone who contacts you while quiet hours are active</string>
     <string name="quiet_hours_auto_sms_null">[Automated Message] I\'ll get back to you when I can.</string>
     <string name="quiet_hours_auto_disabled">Disabled</string>
     <string name="quiet_hours_auto_enabled">All numbers</string>
@@ -221,8 +220,7 @@
     <string name="quiet_hours_sms_code_null">[Alarm]</string>
     <string name="quiet_hours_sms_bypass_title">Text message bypass</string>
     <string name="quiet_hours_sms_code_title">Text message key</string>
-    <string name="quiet_hours_sms_code_explain">If an incoming message contains this text your phone will
-            sound an alarm</string>
+    <string name="quiet_hours_sms_code_explain">If an incoming message contains this text your phone will sound an alarm</string>
     <string name="quiet_hours_call_bypass_title">Incoming call bypass</string>
     <string name="quiet_hours_calls_required_title">Number of calls in 30 minutes</string>
     <string name="quiet_hours_calls_required_summary">" calls to bypass quiet hours"</string>
@@ -480,35 +478,5 @@
     <string name="weekday_friday">Friday</string>
     <string name="weekday_saturday">Saturday</string>
 
-    <!-- Recents Ram Bar -->
-    <string name="ram_bar">RAM bar</string>
-    <string name="ram_bar_note_title">Note</string>
-    <string name="ram_bar_note_summary">This RAM bar shows the actual Android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster.</string>
-    <string name="ram_bar_mode_title">RAM bar mode</string>
-    <string name="ram_bar_mode_dialog_title">Show RAM bar in recent apps</string>
-    <string name="ram_bar_none">None</string>
-    <string name="ram_bar_apps">Applications</string>
-    <string name="ram_bar_cache">Applications and cache</string>
-    <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">RAM bar style</string>
-    <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
-    <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
-    <string name="ram_bar_color_total_mem_color">Other RAM color</string>
-    <string name="ram_bar_color_enabled">Enabled</string>
-    <string name="ram_bar_color_disabled">Disabled</string>
-    <string name="ram_bar_button_reset">Reset colors</string>
-    <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>   
-
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">&#8594;</string>
-    <string name="arrow_down">&#8595;</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
-    <string name="page_animerom">Webpage of the project</String>
-
+    <string name="page_animerom"> Webpage of animerom</string>
 </resources>
