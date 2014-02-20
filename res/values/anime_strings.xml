@@ -509,6 +509,6 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
-
+    <string name="page_animerom">Webpage of the project</String>
 
 </resources>
