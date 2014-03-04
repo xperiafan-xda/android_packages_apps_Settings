@@ -130,7 +130,6 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
-
         
         <!-- Detailed build version -->
         <Preference android:key="build_number" 
@@ -143,5 +142,10 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
+
+        <!-- Mod version -->
+        <Preference android:key="page_animerom"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/page_animerom" />
 
 </PreferenceScreen>
