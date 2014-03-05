@@ -32,7 +32,7 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>-->
     <!-- About AnimeROM -->
-   <PrefeenceScreen
+   <PreferenceScreen
         android:key="about"
         android:icon="@drawable/ic_settings_about"
         android:title="@string/about_anime" >
