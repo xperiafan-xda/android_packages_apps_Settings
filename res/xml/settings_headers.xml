@@ -311,11 +311,4 @@
         android:icon="@drawable/ic_settings_about"
         android:title="@string/about_settings" />
         
-    <!-- About AnimeROM -->
-    <header
-        android:id="@+id/about"
-        android:icon="@drawable/ic_settings_about"
-        android:fragment="com.android.settings.About"
-        android:title="@string/about_anime" />
-
 </preference-headers>
