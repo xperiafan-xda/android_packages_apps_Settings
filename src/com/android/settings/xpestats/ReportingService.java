@@ -115,7 +115,7 @@ public class ReportingService extends Service {
 
             // report to the stats service
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost("http://animerom.github.io/stats/submit/index.php");
+            HttpPost httpPost = new HttpPost("http://animerom.byethost12.com/stats/submit.php");
             boolean success = false;
 
             try {

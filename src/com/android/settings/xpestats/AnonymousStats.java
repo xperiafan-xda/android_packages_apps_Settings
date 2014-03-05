@@ -89,7 +89,7 @@ public class AnonymousStats extends SettingsPreferenceFragment implements
             }
         } else if (preference == mViewStats) {
             // Display the stats page
-            Uri uri = Uri.parse("http://animerom.github.io/stats/");
+            Uri uri = Uri.parse("http://animerom.byethost12.com/stats/stats.php");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         } else {
             // If we didn't handle it, let preferences handle it.
@@ -119,7 +119,7 @@ public class AnonymousStats extends SettingsPreferenceFragment implements
         } else if (which == DialogInterface.BUTTON_NEGATIVE) {
             mEnableReporting.setChecked(false);
         } else {
-            Uri uri = Uri.parse("http://animerom.github.io/stats/");
+            Uri uri = Uri.parse("http://animerom.byethost12.com/stats/stats.php");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         }
     }
