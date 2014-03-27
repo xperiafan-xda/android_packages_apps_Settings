@@ -67,8 +67,11 @@
     <string-array name="pref_battery_indicator_entries" translatable="false">
         <item>@string/battery_bar</item>
         <item>@string/battery_bar_percent</item>
+        <item>@string/battery_percent_then_bar</item>
         <item>@string/battery_circle</item>
         <item>@string/battery_circle_percent</item>
+        <item>@string/battery_percent_only</item>
+        <item>@string/battery_none</item>
     </string-array>
 
     <string-array name="pref_battery_indicator_values" translatable="false">
@@ -76,6 +79,9 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
     </string-array>
 
     <!-- Stylus Gestures -->
@@ -174,6 +180,25 @@
         <item>@string/weekday_thursday</item>
         <item>@string/weekday_friday</item>
         <item>@string/weekday_saturday</item>
+    </string-array>
+
+    <!-- Phone blacklist management -->
+    <string-array name="blacklist_policy_unknown_entries" translatable="false">
+        <item>@string/blacklist_policy_block_calls</item>
+        <item>@string/blacklist_policy_block_messages</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_unknown_values" translatable="false">
+        <item>1</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_private_entries" translatable="false">
+        <item>@string/blacklist_policy_block_calls</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_private_values" translatable="false">
+        <item>1</item>
     </string-array>
 
 </resources>
