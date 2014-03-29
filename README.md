@@ -1,4 +1,4 @@
-android_packages_apps_Settings
+ android_packages_apps_Settings
 ==============================
 
 AnimeROM Settings
