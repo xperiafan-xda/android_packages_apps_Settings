@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Версия Omni</string>
+    <string name="mod_version">Версия Anime</string>
     <string name="mod_version_default">Неизвестно</string>
 
     <!-- Main list strings -->
@@ -169,7 +169,7 @@
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Внимание</string>
-    <string name="custom_runtime_warning_message">ART не поддерживается OmniROM. Этот параметр включен только для экспериментов и может вызвать нестабильность, сбои, потерю данных или препятствовать надлежащей загрузке вашего устройства. Посетите &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;Мы просим вас не отправлять сообщения об ошибках, если у вас включен ART качестве среды выполнения.&lt;br/&gt;&lt;br/&gt;Вы уверены, что хотите перезагрузиться,для изменения среды выполнения с <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> на <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART не поддерживается AnimeROM. Этот параметр включен только для экспериментов и может вызвать нестабильность, сбои, потерю данных или препятствовать надлежащей загрузке вашего устройства. Посетите &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;Мы просим вас не отправлять сообщения об ошибках, если у вас включен ART качестве среды выполнения.&lt;br/&gt;&lt;br/&gt;Вы уверены, что хотите перезагрузиться,для изменения среды выполнения с <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> на <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- Basic Numbers -->
     <string name="two">Два</string>

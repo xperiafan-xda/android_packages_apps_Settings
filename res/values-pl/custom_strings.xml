@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Wersja Omni</string>
+    <string name="mod_version">Wersja Anime</string>
     <string name="mod_version_default">Nieznana</string>
 
     <!-- Main list strings -->
@@ -153,7 +153,7 @@
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Ostrzeżenie</string>
-    <string name="custom_runtime_warning_message">ART nie jest wspierany przez OmniROM. To ustawienie zostało włączone do systemu tylko w celach eksperymentalnych i może powodować nieoczekiwane efekty, crashe, utratę danych lub uniemożliwić włączenie urządzenia. Odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; w celu uzyskania dodatkowych informacji.&lt;br/&gt;&lt;br/&gt;Prosimy o zaniechanie zgłaszania błędów gdy używasz ART.&lt;br/&gt;&lt;br/&gt;Czy chcesz zrestartować urządzenie by zmienić czas wykonywania z <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART nie jest wspierany przez AnimeROM. To ustawienie zostało włączone do systemu tylko w celach eksperymentalnych i może powodować nieoczekiwane efekty, crashe, utratę danych lub uniemożliwić włączenie urządzenia. Odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; w celu uzyskania dodatkowych informacji.&lt;br/&gt;&lt;br/&gt;Prosimy o zaniechanie zgłaszania błędów gdy używasz ART.&lt;br/&gt;&lt;br/&gt;Czy chcesz zrestartować urządzenie by zmienić czas wykonywania z <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- Basic Numbers -->
     <string name="two">Dwa</string>

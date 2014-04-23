@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2013 The OmniROM Project
+<!--  Copyright (C) 2013 The AnimeROM Project
 
   Parts Copyright (C) 2012-2013 The CyanogenMod Project
 
@@ -20,7 +20,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Versão Omni</string>
+    <string name="mod_version">Versão Anime</string>
     <string name="mod_version_default">Desconhecido</string>
 
     <!-- Main list strings -->
@@ -161,7 +161,7 @@ Você realmente quer habilitar essa função?"</string>
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Atenção</string>
-    <string name="custom_runtime_warning_message">ART não é suportado por OmniROM. Esta configuração está inclusa para testes somente e tem o potencial de causar instabilidade, finalizações, perda de dados ou não realizar o boot do aparelho da forma correta. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; para maiores informações.&lt;br/&gt;&lt;br/&gt;Nós pedidos não informar sobre bugs se você habilitou ART como seu runtime.&lt;br/&gt;&lt;br/&gt;Tem certeza que deseja reiniciar para alterar seu runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> para <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART não é suportado por AnimeROM. Esta configuração está inclusa para testes somente e tem o potencial de causar instabilidade, finalizações, perda de dados ou não realizar o boot do aparelho da forma correta. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; para maiores informações.&lt;br/&gt;&lt;br/&gt;Nós pedidos não informar sobre bugs se você habilitou ART como seu runtime.&lt;br/&gt;&lt;br/&gt;Tem certeza que deseja reiniciar para alterar seu runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> para <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- Basic Numbers -->
     <string name="two">Dois</string>

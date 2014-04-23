@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Omni-versie</string>
+    <string name="mod_version">Anime-versie</string>
     <string name="mod_version_default">Onbekend</string>
 
     <!-- Main list strings -->
@@ -145,6 +145,6 @@
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Waarschuwing</string>
-    <string name="custom_runtime_warning_message">ART wordt niet ondersteund door OmniROM. Deze instelling is er alleen om experimentele redenen en er bestaat een mogelijkheid dat je systeem hierdoor instabiel wordt, crasht, data verliest of dat het apparaat niet goed opstart. Bezoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART Introductie&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Stuur geen bug reports in als je gebruikt maakt van de ART runtime.&lt;br/&gt;&lt;br/&gt;Weet je zeker dat je wilt herstarten om de runtime te veranderen van <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> naar <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART wordt niet ondersteund door AnimeROM. Deze instelling is er alleen om experimentele redenen en er bestaat een mogelijkheid dat je systeem hierdoor instabiel wordt, crasht, data verliest of dat het apparaat niet goed opstart. Bezoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART Introductie&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Stuur geen bug reports in als je gebruikt maakt van de ART runtime.&lt;br/&gt;&lt;br/&gt;Weet je zeker dat je wilt herstarten om de runtime te veranderen van <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> naar <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
 </resources>

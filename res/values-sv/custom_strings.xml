@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="mod_version">Omni-version</string>
+    <string name="mod_version">Anime-version</string>
     <string name="mod_version_default">Okänd</string>
     <string name="header_category_interface">Gränssnitt</string>
     <string name="performance_settings">Prestanda</string>
@@ -77,7 +77,7 @@
     <string name="alarm_sound_title">Standardljud för alarm</string>
     <string name="alarm_sound_dialog_title">Standardljud för alarm</string>
     <string name="custom_runtime_warning_title">Varning</string>
-    <string name="custom_runtime_warning_message">ART är inte stött av OmniROM. Denna inställning finns endast inkluderad för experimentation och har potential att orsaka instabilitet, krascher, dataförlust eller förhindra ordentlig uppstart av din enhet. Besök &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; för mer information.&lt;br/&gt;&lt;br/&gt;Vi ber dig att inte skicka buggrapporter om du har aktiverat ART som din körningstid.&lt;br/&gt;&lt;br/&gt;Är du säker på att du vill starta om för att ändra din körningstid från <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> till <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART är inte stött av AnimeROM. Denna inställning finns endast inkluderad för experimentation och har potential att orsaka instabilitet, krascher, dataförlust eller förhindra ordentlig uppstart av din enhet. Besök &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; för mer information.&lt;br/&gt;&lt;br/&gt;Vi ber dig att inte skicka buggrapporter om du har aktiverat ART som din körningstid.&lt;br/&gt;&lt;br/&gt;Är du säker på att du vill starta om för att ändra din körningstid från <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> till <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="two">Två</string>
     <string name="three">Tre</string>
     <string name="four">Fyra</string>

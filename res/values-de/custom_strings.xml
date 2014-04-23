@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Omni-Version</string>
+    <string name="mod_version">Anime-Version</string>
     <string name="mod_version_default">Unbekannt</string>
 
     <!-- Main list strings -->
@@ -159,7 +159,7 @@
 
 <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warnung</string>
-    <string name="custom_runtime_warning_message">ART wird von OmniROM nicht unterstützt. Diese Einstellung ist nur für experimentelle Zwecke enthalten und birgt das Risiko, Instabilität, Abstürze und Datenverlust auszulösen oder das korrekte Starten des Geräts zu verhindern. Besuchen Sie &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; für weitere Informationen.&lt;br/&gt;&lt;br/&gt;Wir bitten Sie, keine Fehlerberichte zu senden, wenn Sie ART aktiviert haben. &lt;br/&gt;&lt;br/&gt;Sind Sie sicher, dass Sie die Laufzeitumgebung von <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> zu <xliff:g id="new" example="libart.so">%2$s</xliff:g> ändern und neu starten möchten?</string>
+    <string name="custom_runtime_warning_message">ART wird von AnimeROM nicht unterstützt. Diese Einstellung ist nur für experimentelle Zwecke enthalten und birgt das Risiko, Instabilität, Abstürze und Datenverlust auszulösen oder das korrekte Starten des Geräts zu verhindern. Besuchen Sie &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; für weitere Informationen.&lt;br/&gt;&lt;br/&gt;Wir bitten Sie, keine Fehlerberichte zu senden, wenn Sie ART aktiviert haben. &lt;br/&gt;&lt;br/&gt;Sind Sie sicher, dass Sie die Laufzeitumgebung von <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> zu <xliff:g id="new" example="libart.so">%2$s</xliff:g> ändern und neu starten möchten?</string>
 
     <!-- Basic Numbers -->
     <string name="two">Zwei</string>
