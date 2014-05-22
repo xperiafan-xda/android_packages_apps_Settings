@@ -967,7 +967,7 @@ InstalledAppDetails. -->
                 android:resource="@id/location_settings" />
         </activity>
 
-        <activity android:name="Settings$SecuritySettingsActivity"
+                <activity android:name="Settings$SecuritySettingsActivity"
                 android:label="@string/security_settings_title"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:taskAffinity=""
