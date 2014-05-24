@@ -85,4 +85,19 @@
                 android:entries="@array/screen_off_animation_entries"
                 android:entryValues="@array/screen_off_animation_values" />
 
+        <!-- Notifications -->
+        <PreferenceCategory
+            android:key="notification_category"
+            android:title="@string/notification_category"/>
+
+        <CheckBoxPreference
+            android:key="notification_peek"
+            android:title="@string/notification_peek_title"
+            android:summary="@string/notification_peek_summary" />
+
+        <PreferenceScreen
+                android:fragment="com.android.settings.notificationlight.NotificationLightSettings"
+                android:key="notification_pulse"
+                android:title="@string/notification_led_category_title" />
+
 </PreferenceScreen>
