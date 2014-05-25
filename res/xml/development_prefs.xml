@@ -41,12 +41,13 @@
     <PreferenceScreen
         android:key="perfomance_hack"
         android:title="@string/memory_management_settings_title_head"
-        android:summary="@string/memory_management_settings_title_head"
+        android:summary="@string/memory_management_settings_title_summary"
         android:fragment="com.android.settings.animerom.PerformanceHack" />
         
     <PreferenceScreen
         android:key="buildprop_modder"
         android:title="@string/propmodder_title"
+        android:summary="@string/propmodder_settings_title_summary"
         android:fragment="com.android.settings.animerom.PropModder"/>
 
     <CheckBoxPreference 
