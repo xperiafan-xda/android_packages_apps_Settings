@@ -388,6 +388,8 @@
     <string name="perfomance_management_2_title">Other Settings</string>
 
     <string name="memory_management_settings_title_head">PerformanceHack</string>
+    <string name="memory_management_settings_title_summary">Custom settings for OMM values and other memory settings</string>
+    <string name="propmodder_settings_title_summary">Custom values for build.prop</string>
     <string name="memory_management_settings_title_subhead">Memory settings</string>
     <string name="memory_management_settings_summary_head">Memory management, Compcache, KSM</string>
 
