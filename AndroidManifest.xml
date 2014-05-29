@@ -109,13 +109,21 @@
         <service android:name=".slim.service.SmsCallService"/>
         <service android:name=".slim.service.AlarmService"/>
 
+        <receiver android:name=".slim.service.SmsCallController$NotificationIntentReceiver" />
+
         <receiver
             android:name=".slim.service.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
                 <action android:name="android.intent.action.TIME_CHANGED"></action>
                 <action android:name="android.intent.action.DATE_CHANGED"></action>
-                <action android:name="com.android.settings.slim.service.SCHEDULE_SERVICE_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_SCHEDULE_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_STOP_SMSCALL_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_START_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_STOP_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_PAUSE_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_RESUME_COMMAND"/>
+                <action android:name="com.android.settings.slim.service.QUIET_HOURS_INIT_COMMAND"/>
             </intent-filter>
         </receiver>
 
@@ -1766,7 +1774,6 @@ AnimeROM ACTIVITIES END -->
             <meta-data android:name="com.android.settings.PARENT_FRAGMENT_CLASS"
                 android:value="com.android.settings.Settings$SoundSettingsActivity" />
         </activity>
->>>>>>> bc0b2e5334434a25bcf676a9c5833525015fd07f
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
