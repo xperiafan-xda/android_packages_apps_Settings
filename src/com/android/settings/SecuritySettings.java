@@ -140,7 +140,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mQuickUnlockScreen;
     private CheckBoxPreference mEnableCameraWidget;
     private CheckBoxPreference mEnablePowerMenu;
-    private CheckBoxPreference mSeeThrough;
+    //private CheckBoxPreference mSeeThrough;
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mMenuUnlock;
     private PreferenceScreen mBlacklist;
