@@ -98,6 +98,15 @@ import com.android.settings.wifi.WifiEnabler;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.slim.QuietHours;
+import com.android.settings.HomeSettings;
+
+import org.omnirom.omnigears.ButtonSettings;
+import org.omnirom.omnigears.interfacesettings.BarsSettings;
+import org.omnirom.omnigears.interfacesettings.MenusSettings;
+import org.omnirom.omnigears.interfacesettings.NotificationPanelSettings;
+import org.omnirom.omnigears.chameleonos.ActiveDisplaySettings;
+import org.omnirom.omnigears.interfacesettings.MoreInterfaceSettings;
+import com.brewcrewfoo.performance.activities.MainActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -321,7 +330,9 @@ public class Settings extends PreferenceActivity
 
     @Override
     public boolean onIsMultiPane() {
-        return false;
+        boolean preferMultiPane = getResources().getBoolean(
+                com.android.internal.R.bool.preferences_prefer_dual_pane);
+        return preferMultiPane;
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -371,7 +382,16 @@ public class Settings extends PreferenceActivity
         KeyboardLayoutPickerFragment.class.getName(),
         ThemeSettings.class.getName(),
         BlacklistSettings.class.getName(),
-        QuietHours.class.getName()
+        QuietHours.class.getName(),
+        ButtonSettings.class.getName(),
+        BarsSettings.class.getName(),
+        MenusSettings.class.getName(),
+        NotificationPanelSettings.class.getName(),
+        ActiveDisplaySettings.class.getName(),
+        MoreInterfaceSettings.class.getName(),
+        AppOpsSummary.class.getName(),
+        HomeSettings.class.getName(),
+        MainActivity.class.getName()
     };
 
     @Override
@@ -1211,5 +1231,7 @@ public class Settings extends PreferenceActivity
     public static class PerformanceSettingsActivity extends Settings { /* empty */ }
     public static class AnonymousStatsActivity extends Settings { /* empty */ } 
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
+    public static class ButtonSettingsActivity extends Settings { /* empty */ }
+    public static class MainActivityActivity extends Settings { /* empty */ }
 
 }
